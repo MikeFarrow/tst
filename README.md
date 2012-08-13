@@ -1,4 +1,4 @@
-tst
+Test Github
 ===
 
-Test repo edit
+This readme plans the testing of a mobile driven project
