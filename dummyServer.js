@@ -54,7 +54,7 @@ function dummyServer(req, res, fetchFile) {
   }
   var match = req.url.match(/^\/static\/(.+)\.html$/);
   if (req.url === '/') {
-    match = [null, 'index'];
+    req.url = '/static/index.html';
   }
   if (match) {
     fetchFile('views/' + match[1] + '.jade', function(err, content) {
